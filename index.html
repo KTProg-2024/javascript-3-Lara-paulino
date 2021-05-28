@@ -15,15 +15,35 @@
 			  position: absolute;
 			  background-color: red;
 			}	
+      #animate2 {
+			  width: 50px;
+			  height: 50px;
+			  position: absolute;
+        top: -0px;
+        right: -0px;
+        top:1px;
+        right:-1px;
+			  background-color: blue;
+      }
+      #click{
+        background-color:red;
+        color:white;
+      }
+      #click2{
+        background-color:blue;
+        color:white;
+      }
 		</style>
     </head>
 
 	<body>
 		<script src="motion.js"></script>	
-		<button type="button" onclick="myMove()">Click Me</button> 
+		<button id="click" type="button" onclick="myMove()">Click Me</button> 
+    <button id="click2" type="button" onclick="myMove1()">Blue</button> 
 		<br><br>
 		<div id ="container">
 		  <div id ="animate"></div>
+      <div id ="animate2"></div>
 		</div>
 		
 	</body>
